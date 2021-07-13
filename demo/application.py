@@ -11,8 +11,13 @@ from kochat.loss import CRFLoss, CosFace, CenterLoss, COCOLoss, CrossEntropyLoss
 from kochat.model import intent, embed, entity
 from kochat.proc import DistanceClassifier, GensimEmbedder, EntityRecognizer, SoftmaxClassifier
 
-from demo.scenario import dust, weather, travel, restaurant
-# from scenario import dust, weather, travel, restaurant
+# 에러나서 추가하는 코드 ---------------
+import matplotlib
+matplotlib.use('agg')
+# ------------------------------------
+
+# from demo.scenario import dust, weather, travel, restaurant
+from scenario import dust, weather, travel, restaurant
 # 에러 나면 이걸로 실행해보세요!
 
 

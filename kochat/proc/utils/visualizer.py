@@ -9,6 +9,10 @@ import re
 
 import six
 from matplotlib import pyplot as plt
+# 에러나서 추가하는 코드 ---------------
+import matplotlib
+matplotlib.use('agg')
+# ------------------------------------
 import numpy as np
 import pandas as pd
 from pandas import DataFrame
